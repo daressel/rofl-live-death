@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +40,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.playground {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.row {
+  gap: 1px;
+  display: flex;
+}
+
+.cell {
+  width: 5px;
+  height: 5px;
+  transition: background-color 0.5s ease-out;
+  background-color: white;
+}
+
+.cell-live {
+  background-color: red;
 }
