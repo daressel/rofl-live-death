@@ -1,0 +1,16 @@
+name: TEST SECRETS
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - shell: bash
+      env:
+        SUPER_SECRET: ${{ secrets.SOME_NAME }}
+      run: |
+        echo $SUPER_SECRET
+    
