@@ -11,6 +11,8 @@ jobs:
     - shell: bash
       env:
         SUPER_SECRET: ${{ secrets.SOME_NAME }}
+        SUPER_SECRET1: 1111
       run: |
         echo $SUPER_SECRET
+        echo $SUPER_SECRET1
     
